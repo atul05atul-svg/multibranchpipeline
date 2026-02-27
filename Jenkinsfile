@@ -4,19 +4,19 @@ pipeline {
     stages {
         stage('Dev') {
             steps {
-                echo 'I am in Dev'
+                echo 'I am in Dev  Environment'
                 sh 'git --version'
             }
         }
  stage('Testing') {
             steps {
-                echo 'I am in Testing'
+                echo 'I am in Testing OK'
                 sh 'python3 --version'
             }
         }
  stage('Production') {
             steps {
-                echo 'I am in Production'
+                echo 'I am in Production Server'
                 sh 'docker --version'
             }
         }
