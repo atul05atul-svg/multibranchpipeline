@@ -26,5 +26,11 @@ pipeline {
                 sh 'docker --version'
             }
         }
+  stage('Monitoring') {
+            steps {
+                echo 'I am in Monitoring'
+                sh 'docker --version'
+            }
+        }
     }
 }
